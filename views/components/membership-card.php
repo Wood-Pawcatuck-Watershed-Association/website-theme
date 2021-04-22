@@ -8,18 +8,22 @@ $membership_price_household = carbon_get_the_post_meta('membership_price_househo
         <div class="membership-card__header">
             <h3 class="membership-card__title text-center"><?php the_title(); ?></h3>
             <div class="membership-card__prices">
+              <?php if ($membership_price_individual): ?>
                 <div class="membership-card__prices--individual">
-                    <h4 class="price text-center">$<?= $membership_price_individual; ?></h4>
+                    <h4 class="price text-center">$<?= $membership_price_individual ?></h4>
                     <h5 class="text-center">Individual</h5>
                 </div>
+                <?php endif; ?>
+              <?php if ($membership_price_household): ?>
                 <div class="membership-card__prices--household">
-                    <h4 class="price text-center">$<?= $membership_price_household; ?></h4>
+                    <h4 class="price text-center">$<?= $membership_price_household ?></h4>
                     <h5 class="text-center">Household</h5>
                 </div>
+              <?php endif; ?>
             </div>
         </div>
         <div class="membership-card__body">
-            <?= $membership_description; ?>
+            <?= $membership_description ?>
         </div>
         <div class="membership-card__footer text-center">
             <a class="btn btn-lg btn-orange text-white" href="<?php the_permalink(); ?>">Sign Up</a>
