@@ -1,0 +1,35 @@
+{
+  "name": "wpwa/wordpress-theme",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "Wood-Pawcatuck watershed association public website",
+  "homepage": "https://wpwa.org",
+  "authors": [
+    {
+      "name": "Jon Waldstein",
+      "email": "jpwaldstein@gmail.com",
+      "homepage": "https://github.com/jonwaldstein"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/Wood-Pawcatuck-Watershed-Association/wordpress-theme/issuess"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "htmlburger/carbon-fields": "^3.3"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Roots\\Sage\\": "lib/"
+    },
+    "classmap": [
+      "lib/"
+    ]
+  }
+}
