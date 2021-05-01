@@ -3,14 +3,16 @@ $Query = new WP_Query([
     'post_type' => 'cpt_projects',
     'orderby' => 'date',
     'order' => 'DESC',
-    'posts_per_page' => '99',
+    'nopaging' => true,
     'tax_query' => array(
         array(
             'taxonomy' => 'ct_project-type',
+            'field' => 'term_id',
             'terms' => get_queried_object_id(),
         )
     )
 ]);
+
 $projecttypes = get_terms('ct_project-type', array(
     'orderby'    => 'count',
     'hide_empty' => 1,
@@ -34,7 +36,8 @@ $projecttypes = get_terms('ct_project-type', array(
                             <?= $projecttype->name ?>
                             <span class="badge badge-primary badge-pill"><?= $projecttype->count; ?></span>
                         </a>
-                    <?php endforeach; ?>
+                    <?php endforeach;
+                    wp_reset_postdata(); ?>
                 </aside>
             </div>
             <div class="col-md-8 card-deck">
@@ -46,5 +49,5 @@ $projecttypes = get_terms('ct_project-type', array(
     </div>
 </section>
 
-<?php //the_posts_navigation(); 
+<?php //the_posts_navigation();
 ?>
