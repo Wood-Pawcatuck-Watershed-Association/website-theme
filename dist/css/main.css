@@ -15448,6 +15448,9 @@ li.slick-slide {
 
 .page-sidebar .widget_nav_menu ul a {
   border-radius: 1px !important;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .home-banner {

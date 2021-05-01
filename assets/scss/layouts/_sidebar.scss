@@ -1,21 +1,24 @@
-.page-sidebar{
-	.widget_nav_menu{
-		margin-bottom: 2rem;
-		ul{
-			list-style-type: none;
-			padding-left: 0;
-			@extend .list-group;
-			.current_page_item,
-			.current-menu-item{
-				a{
-					@extend .active;
-				}
-			}
-			a{
-				@extend .list-group-item;
-				@extend .list-group-item-action;
-				border-radius: 1px !important;
-			}
-		}
-	}	
+.page-sidebar {
+  .widget_nav_menu {
+    margin-bottom: 2rem;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      @extend .list-group;
+      .current_page_item,
+      .current-menu-item {
+        a {
+          @extend .active;
+        }
+      }
+      a {
+        @extend .list-group-item;
+        @extend .list-group-item-action;
+        border-radius: 1px !important;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+    }
+  }
 }
