@@ -51,7 +51,7 @@ $membership_benefits = carbon_get_the_post_meta('membership_benefits');
               foreach ($membership_benefits as $benefit): ?>
                 <li class='pb-2'>
                   <span class="fa-li"><i class='<?= $benefit['icon'] ?> fa-lg'></i></span>
-                  <span><?= $benefit['description'] ?></span>
+                  <span><?= wpautop(do_shortcode($benefit['description'])) ?></span>
                 </li>
               <?php
               endforeach; ?>
