@@ -7,7 +7,7 @@ $membership_price_household = carbon_get_the_post_meta('membership_price_househo
 $membership_highlight = carbon_get_the_post_meta('membership_highlight');
 $membership_benefits = carbon_get_the_post_meta('membership_benefits');
 ?>
-<div class="col-lg-6 col-xl-4 d-flex">
+<div class="col-lg-6 col-xl-4 d-flex justify-content-center">
   <div class="membership-card">
       <?php
       if ($membership_highlight): ?>
