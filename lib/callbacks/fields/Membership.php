@@ -9,6 +9,8 @@ Container::make('post_meta', 'Membership Options')
         array(
             Field::make('text', 'membership_price_individual', 'Individual Price')->set_width(50),
             Field::make('text', 'membership_price_household', 'Household Price')->set_width(50),
+            Field::make('checkbox', 'membership_highlight', __('Most Popular'))
+                ->set_option_value('yes'),
             Field::make('complex', 'membership_benefits', __('Benefits'))
                 ->setup_labels(
                     array(
@@ -21,11 +23,11 @@ Container::make('post_meta', 'Membership Options')
                         Field::make('select', 'icon', __('Choose Icon'))
                             ->set_options(
                                 array(
-                                    '1' => 1,
-                                    '2' => 2,
-                                    '3' => 3,
-                                    '4' => 4,
-                                    '5' => 5,
+                                    'fas fa-parking' => 'Parking',
+                                    'fas fa-calendar-alt' => 'Calendar',
+                                    'fas fa-anchor' => 'Anchor',
+                                    'fas fa-user-friends' => 'Friend',
+                                    'fas fa-home' => 'Home',
                                 )
                             )->set_width(50),
                         Field::make('textarea', 'description', __('Description'))->set_width(50),
