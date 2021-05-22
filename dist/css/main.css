@@ -14630,7 +14630,8 @@ button:focus {
 #email-registration-form .btn-submit,
 .search-form .search-submit,
 .comment-form input[type=submit] {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 .btn-white {
