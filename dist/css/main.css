@@ -14528,6 +14528,11 @@ a.text-orange:focus {
   font-weight: 600;
 }
 
+.tippy-popper {
+  z-index: 10 !important;
+  background: #fff !important;
+}
+
 a {
   font-weight: 400;
   font-weight: 500;
@@ -15144,6 +15149,7 @@ body:not(.donate) .donation-form .recurring {
   flex-direction: column;
   margin-bottom: 50px;
   font-family: "Inter", sans-serif;
+  width: 100%;
 }
 
 .membership-card__top {
@@ -15482,6 +15488,25 @@ li.slick-slide {
   padding: 0.5rem;
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+.footer__top .menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__top .menu a,
+.footer__top .menu li {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.footer__top h6 {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .home-banner {

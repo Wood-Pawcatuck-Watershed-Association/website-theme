@@ -1,7 +1,12 @@
 //content
-.content{
-	a{
-		color: #333;
-		font-weight: 600;
-	}
+.content {
+  a {
+    color: #333;
+    font-weight: 600;
+  }
+}
+
+.tippy-popper {
+  z-index: 10 !important;
+  background: #fff !important;
 }
